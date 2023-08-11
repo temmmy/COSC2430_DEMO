@@ -1,0 +1,178 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Chi Nghia
+ID: s3979170
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to website's icon -->
+    <link rel="icon" href="img/websiteIcon.png" type="image/png">
+    <!-- Link to .css file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nova+Mono&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Nikibook</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><i class="bx bx-book"></i>
+                <span>Nikibook</span>
+            </a>
+            </i>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#fiction">Fiction</a></li>
+                <li><a href="#non-fiction">Non-Fiction</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Home  -->
+    <section class="home-container" id="home">
+        <div class="home-text">
+            <h1>Discover, Delight, and Devour</h1>
+            <p>Step into a literary paradise at our online bookshop. Discover captivating reads, indulge your
+                imagination, and find your next favorite book.</p>
+            <a href="#books" class="btn">Start Reading!</a>
+        </div>
+        <div class="home-img">
+            <img src="img/Reading.svg" alt="">
+        </div>
+    </section>
+    <!-- Video Section -->
+    <section class="video-container">
+        <h1>Benefits of Reading</h1>
+        <p>Reading is more than just a pastime; it's a gateway to vast worlds of knowledge, imagination, and personal
+            growth. Delving into a book can enhance our cognitive skills, expand our vocabulary, and foster empathy by
+            allowing us to step into the shoes of different characters. It's a journey of the mind that offers countless
+            benefits. If you're intrigued by the wonders of reading, watch this video to dive deeper into its
+            transformative power.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ogM1mCAZeS8">
+        </iframe>
+        <div class="shelf-depth"></div>
+        <div class="shelf"></div>
+    </section>
+    <!-- Book Section -->
+    <section class="books-container" id="books">
+        <div class="overview" id="fiction">
+            <a href="fiction.html">
+                <h1>Fiction</h1>
+            </a>
+            <p>Dive into the boundless realms of imagination with our curated collection of Fiction Books. From
+                timeless
+                classics to contemporary masterpieces, our selection offers a tapestry of tales that captivate the mind
+                and
+                stir the soul. Whether you're drawn to epic adventures, intricate mysteries, or heartfelt dramas, our
+                diverse range promises a literary escape for every reader. Explore the myriad worlds of fiction and let
+                your
+                spirit soar with stories that transcend the ordinary.</p>
+            <a href="fiction.html" class="btn overview">More Fictions!</a>
+        </div>
+        <div class="bookshelf">
+            <div class="book-grid">
+                <ul>
+                    <li> <a href="book1.html"><img src="https://m.media-amazon.com/images/I/71Djqom1jRL.jpg" /></a>
+                    </li>
+                    <li> <a href="book4.html"><img src="https://m.media-amazon.com/images/I/81tNnqcHxlL.jpg" /></a>
+                    </li>
+                    <li> <a href="book7.html"><img src="https://m.media-amazon.com/images/I/A12tbaSby+L.jpg" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shelf-depth"></div>
+            <div class="shelf"></div>
+        </div>
+        <div class="overview" id="non-fiction">
+            <a href="non-fiction.html">
+                <h1>Non-Fiction</h1>
+            </a>
+            <p> Embark on a journey of discovery with our expansive collection of Non-Fiction Books. From enlightening
+                biographies to in-depth analyses, our selection delves into the real stories and facts that shape our
+                world. Whether you're passionate about history, science, self-improvement, or cultural studies, our
+                diverse range offers a treasure trove of knowledge waiting to be uncovered. Dive deep into the truths of
+                our universe and enrich your understanding with every page.</p>
+            <a href="non-fiction.html" class="btn overview">More Non-Fictions!</a>
+        </div>
+        <div class="bookshelf">
+            <div class="book-grid">
+                <ul>
+                    <li><a href="book10.html"><img src="https://m.media-amazon.com/images/I/81bGKUa1e0L.jpg" /></a>
+                    </li>
+                    <li><a href="book14.html"><img src="https://m.media-amazon.com/images/I/81Lde7MCZRL.jpg" /></a>
+                    </li>
+                    <li><a href="book17.html"><img src="https://m.media-amazon.com/images/I/71xlR6yDvkL.jpg" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="shelf-depth"></div>
+            <div class="shelf"></div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/nikita.japansev"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/temmmyyyyy/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/temmmy"><i class='bx bxl-github'></i></i></a>
+            <a href="https://www.linkedin.com/in/nikitadata/"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <div class="footer-navbar">
+            <ul>
+                <li><a href="privacy.html" class="">Privacy Policy</a></li>
+                <li><a href="terms.html" class="">Terms</a></li>
+                <li><a href="about.html" class="">About Me</a></li>
+                <li><a href="contact.html" class="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><span id="nikita"> Nikita</span></a>
+            </p>
+            <p id="rights">All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Preloader -->
+    <section class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </section>
+    <!-- Script for preloader animation and hamburger menu -->
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader-wrapper")
+
+            loader.classList.add("loader-hidden");
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            })
+        });
+
+
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".navbar");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>

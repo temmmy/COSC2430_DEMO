@@ -1,0 +1,143 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023B
+Assessment: Assignment 1
+Author: Nguyen Chi Nghia
+ID: s3979170
+Acknowledgement: Acknowledge the resources that you use here. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to website's icon -->
+    <link rel="icon" href="img/websiteIcon.png" type="image/png">
+    <!-- Link to .css file -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nova+Mono&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,700;1,200;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Nikibook</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo"><i class="bx bx-book"></i>
+                <span>Nikibook</span>
+            </a>
+            </i>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fiction.html">Fiction</a></li>
+                <li><a href="non-fiction.html">Non-Fiction</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <!-- Product -->
+    <section class="product-container" id="product">
+        <div class="row">
+            <div class="col-2 first">
+                <div class="imgs">
+                    <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg" id="product-image" alt="">
+
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg" alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="https://i5.walmartimages.com/asr/3ebac234-1fde-4080-a600-ddb6794a565a_1.c61bfffad6c2eebe37082492bcc504bd.jpeg"
+                                alt="">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="https://angelatiu.files.wordpress.com/2020/02/img_5077.jpg?w=840" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="shelf-depth"></div>
+                <div class="shelf"></div>
+            </div>
+            <div class="col-2 description">
+                <p id="breadcrumb"> <a class="breadcrumb" href="index.html">Homepage</a> / <a class="breadcrumb"
+                        href="non-fiction.html">Non-Fiction</a> / The Subtle Art of Not Giving a F*ck</p>
+                </p>
+                <h4>$16.99</h4>
+                <input type="number" value="1">
+                <a class="btn product">Add to Cart</a>
+            </div>
+        </div>
+    </section>
+    <!-- Description -->
+    <main class="descript">
+        <h1>The Subtle Art of Not Giving a F*ck</h1>
+        <p> by <span class="author">Mark Manson</span>
+        <h3>Product Details</h3>
+        <br>
+        <p>In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how
+            to stop trying to be positive all the time so that we can truly become better, happier people.
+
+            For decades we've been told that positive thinking is the key to a happy, rich life. "F*ck
+            positivity," Mark Manson says. "Let's be honest, shit is f*cked, and we have to live with it." In
+            his wildly popular Internet blog, Manson doesn't sugarcoat or equivocate. He tells it like it is - a
+            dose of raw, refreshing, honest truth that is sorely lacking today. The Subtle Art of Not Giving a
+            F*ck is his antidote to the coddling, let's-all-feel-good mind-set that has infected modern society
+            and spoiled a generation, rewarding them with gold medals just for showing up. </p>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/nikita.japansev"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/temmmyyyyy/"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://github.com/temmmy"><i class='bx bxl-github'></i></i></a>
+            <a href="https://www.linkedin.com/in/nikitadata/"><i class='bx bxl-linkedin-square'></i></a>
+        </div>
+        <div class="footer-navbar">
+            <ul>
+                <li><a href="privacy.html" class="">Privacy Policy</a></li>
+                <li><a href="terms.html" class="">Terms</a></li>
+                <li><a href="about.html" class="">About Me</a></li>
+                <li><a href="contact.html" class="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 <span id="nikita"> Nikita</span></p>
+            <p id="rights">All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Preloader -->
+    <section class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </section>
+    <script>
+        window.addEventListener("load", () => {
+            const loader = document.querySelector(".loader-wrapper")
+
+            loader.classList.add("loader-hidden");
+            loader.addEventListener("transitionend", () => {
+                document.body.removeChild(loader);
+            })
+        });
+
+
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector(".navbar");
+        hamburger.onclick = function () {
+            nav.classList.toggle("active");
+        }
+    </script>
+</body>
+
+</html>
