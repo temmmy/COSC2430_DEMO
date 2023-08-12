@@ -680,15 +680,16 @@ span {
 }
 
 .purpose-group {
-    margin: 15px auto;
+    margin: 10px auto;
 }
 
 .checkbox-group {
-    margin: 15px auto;
+    margin: 5px auto;
 }
 
-.radio-gropu {
-    margin: 15px auto;
+.radio-group {
+    margin: 5px auto;
+    margin-bottom: 10px;
 }
 
 select {
@@ -697,15 +698,23 @@ select {
     background-color: var(--bg-color);
 }
 
+
 .input-group input,
 textarea {
     width: 400px;
     height: 40px;
-    margin-top: 20px;
+    margin-top: 30px;
     border: 1px solid var(--secondary-color);
     padding-left: 10px;
     border-radius: 14px;
     background-color: var(--bg-color);
+}
+
+.input-group label {
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: center;
+    position: absolute;
 }
 
 .input-group textarea {
