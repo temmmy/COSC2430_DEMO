@@ -608,14 +608,14 @@ footer {
 }
 
 #breadcrumb {
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 50px;
 }
 
 .breadcrumb {
     color: inherit;
     text-decoration: inherit;
-    margin-bottom: 10px;
 }
 
 .breadcrumb:hover {
@@ -755,8 +755,6 @@ textarea {
     #niki {
         max-width: 80%;
     }
-
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -770,19 +768,20 @@ textarea {
         text-align: center;
         flex-direction: column;
         justify-content: center;
-        height: 250px;
+        height: 100px;
         position: absolute;
         top: 50px;
         left: 0;
         right: 0;
         width: 100%;
         background-color: var(--bg-color);
-        z-index: 50;
+        z-index: -1;
         transition: 0.5s;
         opacity: 0;
     }
 
     .navbar.active {
+        z-index: 50;
         height: 350px;
         opacity: 1;
     }
